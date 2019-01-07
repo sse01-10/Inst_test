@@ -5,10 +5,6 @@
 #include <Adafruit_STMPE610.h>
 #include <SoftwareSerial.h>
 
-#define YP A1  // must be an analog pin, use "An" notation!
-#define XM A2  // must be an analog pin, use "An" notation!
-#define YM 7   // can be a digital pin
-#define XP 6   // can be a digital pin
 #define MINPRESSURE 55
 #define MAXPRESSURE 1000
 

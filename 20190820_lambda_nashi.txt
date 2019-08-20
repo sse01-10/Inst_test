@@ -1,0 +1,22 @@
+pi@raspberrypi:~/Himawari/20190807/lamdbanashi $ sudo python3 test.py
+WARNING: Logging before flag parsing goes to stderr.
+W0814 17:09:43.210782 1996139216 deprecation_wrapper.py:118] From /usr/local/lib/python3.7/dist-packages/tensorflow/__init__.py:98: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W0814 17:09:43.212095 1996139216 deprecation_wrapper.py:118] From /usr/local/lib/python3.7/dist-packages/tensorflow/__init__.py:98: The name tf.AttrValue is deprecated. Please use tf.compat.v1.AttrValue instead.
+
+W0814 17:09:43.212647 1996139216 deprecation_wrapper.py:118] From /usr/local/lib/python3.7/dist-packages/tensorflow/__init__.py:98: The name tf.COMPILER_VERSION is deprecated. Please use tf.version.COMPILER_VERSION instead.
+
+W0814 17:09:43.213076 1996139216 deprecation_wrapper.py:118] From /usr/local/lib/python3.7/dist-packages/tensorflow/__init__.py:98: The name tf.CXX11_ABI_FLAG is deprecated. Please use tf.sysconfig.CXX11_ABI_FLAG instead.
+
+W0814 17:09:43.213504 1996139216 deprecation_wrapper.py:118] From /usr/local/lib/python3.7/dist-packages/tensorflow/__init__.py:98: The name tf.ConditionalAccumulator is deprecated. Please use tf.compat.v1.ConditionalAccumulator instead.
+
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "test.py", line 15, in <module>
+    model = load_model(MODEL_FILE_NAME)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow_core/python/keras/saving/save.py", line 140, in load_model
+    loader_impl.parse_saved_model(filepath)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow_core/python/saved_model/loader_impl.py", line 83, in parse_saved_model
+    constants.SAVED_MODEL_FILENAME_PB))
+OSError: SavedModel file does not exist at: /home/pi/Himawari/20190807/lamdbanashi/model_kerasRL.h5/{saved_model.pbtxt|saved_model.pb}
+pi@raspberrypi:~/Himawari/20190807/lamdbanashi $ 
